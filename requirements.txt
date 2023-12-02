@@ -3,3 +3,4 @@ gnews
 transformers4rec
 beautifulsoup4>=4.11.1
 requests>=2.31
+openai
