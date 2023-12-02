@@ -30,8 +30,8 @@ def appendStockFeature(row):
         return None
 
     print(f"Prev Row : \ {row}")
-    date = row['DATE_TRANSACTION']  # assuming 'StartDate' is a column in your DataFrame
-    startDate = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+    #date = row['DATE_TRANSACTION']  # assuming 'StartDate' is a column in your DataFrame
+    #startDate = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
     stockFeature = getStockFeature(ticker)
     if stockFeature == None:
         return None
