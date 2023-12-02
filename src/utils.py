@@ -20,15 +20,21 @@ def isin_to_ticker(isin):
         }
     ]
     response = requests.post(url, headers=headers, data=json.dumps(data))
-    # To print the response
-    return response.json()[0]['data'][0]['ticker']
+    if response.status_code == 200:
+        data = json.loads(response.text)
+        if data and 'data' in data[0]:
+            return data[0]['data'][0]['ticker']
+    return None
 
-#def main():
-#    ticker = "AAPL"
-#    print(isin_to_ticker(ticker_to_isin(ticker)))
-#
-#if __name__ == "__main__":
-#    main()
+def main():
+    ticker = "AAPL"
+    isin="US17275R1023"
+    print(isin_to_ticker(isin))
+
+    print(isin_to_ticker(ticker_to_isin(ticker)))
+
+if __name__ == "__main__":
+    main()
 
 
 
