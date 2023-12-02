@@ -3,17 +3,12 @@ import json
 from openai import OpenAI
 
 
-
-
-
 def main():
 
-    #User opens chatbot window
-    window_open = True
     context_history = None
 
     #infinte loop for user asking questions to bot
-    while(window_open):
+    while(True):
         # 1. User asks a question
         user_input = input("Ask a question: ")
 
@@ -22,7 +17,7 @@ def main():
         chatbot_response = callGPT(user_reccomendation_prompt)
 
         # 3. Chatbot updates context history
-        context_history = context_history + chatbot_response
+        context_history =  "Q:" + user_input + "\nA:" + chatbot_response
 
         # Display to user
         print(chatbot_response)
@@ -35,19 +30,17 @@ def make_reccomendation_prompt(user_input, previous_prompt):
     answer = ""
 
     #If the user has asked a question, take that into context
-    if(previous_prompt != None):
-        answer = "Here is the previous context you need to know " + previous_prompt
-
+    if(previous_prompt == None):
+        answer = previous_prompt
 
     ## Get the stock JSON file
     stock_json = open("data/stock_json/AAPL.json", "r")
 
     ## TODO: Treat JSON data as a string and append it to the prompt
-    
+    answer = answer + treat_json_as_string(stock_json)
 
-    "The stock we are interested has the following ticker: ‘AAPL’. We also have the stock vector"++"Consider the following user with this characteristic vector:"++". Would you recommend this stock to this specific user, and for what reasons list in order of importance."
-
-    return
+    answer = answer + "Q: " + user_input
+    return answer
 
 def callGPT(prompt):
     ##GPT 4 calling
@@ -57,7 +50,7 @@ def callGPT(prompt):
         messages=[
             {
                 "role": "user",
-                "content": [{"type": "text", "text": prompt}],
+                "content": [{"type": "text", "text": "Given the following context of conversation, of the form Q:{{question}} A:{{answer}} give an answer to the prompt of the user. If there is no context history and just a question, answer it to the best of your abilities. Remember to be precise in your answers, use detail to help the user to get as much useful information as he can obtain without overwhelming him with info. Here is the context history and the question, the question starts at Q:" + prompt}],
             }
         ],
         max_tokens = 300,
@@ -65,6 +58,6 @@ def callGPT(prompt):
     processed_response = response.choices[0].message.content
     return processed_response
 
-
-prompt = "The stock we are interested has the following ticker: ‘AAPL’. We also have the stock vector"++"Consider the following user with this characteristic vector:"++". Would you recommend this stock to this specific user, and for what reasons list in order of importance."
-
+def treat_json_as_string(json_file):
+    json_string = json.dumps(json_file)
+    return json_string

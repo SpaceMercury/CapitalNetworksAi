@@ -23,5 +23,8 @@
   "revenue": {
     "year": "2022",
     "amount": "$394.33 billion"
-  }
+  },
+  "currentPrice": "$191.24",
+  "stockVolume": "457000000",
+  "simpleMovingAverage": "$179.45"
 }
