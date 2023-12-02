@@ -1,16 +1,27 @@
 {
-  "companyName": "",
-  "foundedYear": "",
-  "ceo": "",
+  "companyName": "Apple Inc.",
+  "foundedYear": "1976",
+  "ceo": "Tim Cook",
   "headquarters": {
-    "city": "",
-    "state": "",
-    "country": ""
+    "city": "Cupertino",
+    "state": "California",
+    "country": "United States"
   },
-  "products": [],
-  "employees": [],
+  "products": [
+    "iPhone",
+    "iPad",
+    "Mac",
+    "iPod",
+    "Apple Watch",
+    "Apple TV",
+    "HomePod",
+    "macOS",
+    "iOS",
+    "watchOS"
+  ],
+  "employees": "Approximately 154,000 (as of 2021)",
   "revenue": {
-    "year": "",
-    "amount": ""
+    "year": "2022",
+    "amount": "$394.33 billion"
   }
 }
