@@ -32,16 +32,13 @@ def appendStockFeature(row):
     print(f"Prev Row : \ {row}")
     date = row['DATE_TRANSACTION']  # assuming 'StartDate' is a column in your DataFrame
     startDate = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
-    #srtDate = (startDate.year, startDate.month, startDate.day -1)
-    #endDate = (startDate.year, startDate.month, startDate.day +1)
     stockFeature = getStockFeature(ticker)
     if stockFeature == None:
         return None
-    #stockNews = getStockNews(ticker, srtDate, endDate)
-
     # Add each element of stockFeature and stockNews to the row
     for key, value in stockFeature.items():
         row[f'StockFeature_{key}'] = value
+    print(row)
     return row
 
 def main():

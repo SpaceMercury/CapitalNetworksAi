@@ -7,29 +7,37 @@ def process_row(args):
     if appended is None:
         print(f"Index to drop: {index}")
         return index
-    return None
+    return appended
+
 def extend(df):
     # Create a pool of workers
     with mp.Pool(mp.cpu_count()) as pool:
         # Use map to distribute the tasks to the workers
-        rows_to_drop = pool.map(process_row, df.iterrows())
+        rows_to_add = pool.map(process_row, df.iterrows())
     # Filter out None values
-    rows_to_drop = [index for index in rows_to_drop if index is not None]
-    # Drop the rows
-    df = df.drop(rows_to_drop)
-    return df
+    new_rows = [row for row in rows_to_add if row is not None]
+
+    # Create a DataFrame from new rows
+    new_df = pd.DataFrame(new_rows)
+    return new_df
+
 def main():
     # Read the xlsx file
-    df = pd.read_excel('data/SwissQuote/Dataset_sq_EVA.xlsx')
+    df = pd.read_csv('data/extended/evaExtended.csv')
     newdf = extend(df)
+
     ## Save the updated dataframe to a new csv file
-    newdf.to_csv('data/extended/evaExtended.csv')
+    newdf.to_csv('data/extended/evaExtended1.csv')
+
     ## Read the xlsx file
-    df = pd.read_excel('data/SwissQuote/Dataset_sq_JOSEPH.xlsx')
+    df = pd.read_csv('data/extended/JosephExtended.csv')
+
     ## Apply the function in parallel
     newdf = extend(df)
+
     ## Save the updated dataframe to a new csv file
-    newdf.to_csv('data/extended/JosephExtended.csv')
+    newdf.to_csv('data/extended/JosephExtended1.csv')
+
 if __name__ == '__main__':
     mp.freeze_support()  # Add this line
     main()
