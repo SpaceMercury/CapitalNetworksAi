@@ -1,6 +1,6 @@
 import openai
 import json
-from openai import OpenAI
+import openai 
 import os
 import pandas as pd
 
@@ -29,7 +29,7 @@ def make_reccomendation_prompt(stock, user_id, user_input, previous_prompt):
 
 def callGPT(prompt):
     ##GPT 4 calling
-    key = os.environ["OPENAI_API_KEY"]
+    key = os.environ["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"]
     client = OpenAI(api_key=key)
     response = client.chat.completions.create(
         model="gpt-4-1106-preview",
