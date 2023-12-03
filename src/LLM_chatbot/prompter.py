@@ -47,6 +47,8 @@ def main():
 
     context_history = None
 
+    
+
     #infinte loop for user asking questions to bot
     while(True):
         # 1. User asks a question

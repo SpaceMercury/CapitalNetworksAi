@@ -1,0 +1,16 @@
+import pandas as pd
+
+
+def findStockTickers(data_csv):
+    df = pd.read_csv(data_csv)
+    df = df[]
+    original_tickers = df.unique()
+    return original_tickers
+
+
+def main():
+    tickers = findStockTickers('data/extended/evaExtended.csv')
+    print(tickers)
+
+if __name__ == "__main__":
+    main()
