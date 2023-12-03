@@ -1,30 +1,52 @@
 {
-  "companyName": "Apple Inc.",
-  "foundedYear": "1976",
-  "ceo": "Tim Cook",
-  "headquarters": {
-    "city": "Cupertino",
-    "state": "California",
-    "country": "United States"
-  },
-  "products": [
-    "iPhone",
-    "iPad",
-    "Mac",
-    "iPod",
-    "Apple Watch",
-    "Apple TV",
-    "HomePod",
-    "macOS",
-    "iOS",
-    "watchOS"
-  ],
-  "employees": "Approximately 154,000 (as of 2021)",
-  "revenue": {
-    "year": "2022",
-    "amount": "$394.33 billion"
-  },
-  "currentPrice": "$191.24",
-  "stockVolume": "457000000",
-  "simpleMovingAverage": "$179.45"
+    "companyName": "Apple Inc.",
+    "foundedYear": "1976",
+    "ceo": "Tim Cook",
+    "headquarters": {
+        "city": "Cupertino",
+        "state": "California",
+        "country": "United States"
+    },
+    "products": [
+        "iPhone",
+        "iPad",
+        "Mac",
+        "iPod",
+        "Apple Watch",
+        "Apple TV",
+        "HomePod",
+        "macOS",
+        "iOS",
+        "watchOS"
+    ],
+    "employees": "Approximately 154,000 (as of 2021)",
+    "revenue": {
+        "year": "2022",
+        "amount": "$394.33 billion"
+    },
+    "currentPrice": "$191.24",
+    "stockVolume": "457000000",
+    "simpleMovingAverage": "$179.45",
+    "news": [
+        {
+            "title": "Apple (NASDAQ:AAPL) Gains Slightly Due to Smartwatch Win - TipRanks.com - TipRanks",
+            "description": "Apple (NASDAQ:AAPL) Gains Slightly Due to Smartwatch Win - TipRanks.com  TipRanks",
+            "published date": "Fri, 01 Dec 2023 20:09:12 GMT"
+        },
+        {
+            "title": "Apple Stock: Post-Earnings Rally Stalls - Investor's Business Daily",
+            "description": "Apple Stock: Post-Earnings Rally Stalls  Investor's Business Daily",
+            "published date": "Wed, 29 Nov 2023 21:40:00 GMT"
+        },
+        {
+            "title": "Apple Stock Fell Last Week, Analysts Say This Is The Perfect Opportunity To Buy - Apple (NASDAQ:AAPL) - Benzinga",
+            "description": "Apple Stock Fell Last Week, Analysts Say This Is The Perfect Opportunity To Buy - Apple (NASDAQ:AAPL)  Benzinga",
+            "published date": "Thu, 30 Nov 2023 15:01:59 GMT"
+        },
+        {
+            "title": "Apple (NASDAQ:AAPL) and Paramount Look to Team Up - TipRanks.com - TipRanks",
+            "description": "Apple (NASDAQ:AAPL) and Paramount Look to Team Up - TipRanks.com  TipRanks",
+            "published date": "Fri, 01 Dec 2023 14:28:37 GMT"
+        }
+    ]
 }
