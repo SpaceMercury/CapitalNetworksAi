@@ -2,6 +2,7 @@ import PySimpleGUI as sg
 import random as rd
 import src.LLM_chatbot.prompter as chatbot
 import numpy as np
+from src.recommenderSys.rec import recommenderSys
 
 # Define the advisor function
 def advisor(stock, features):
@@ -14,7 +15,9 @@ def Chat(txt):
 
 # Define the function to get the best 5 stocks
 def get_best_5_stocks():
-    return ['AAPL', 'MSFT', 'GOOG', 'FB', 'AMZN']
+    ids, scores = recommenderSys(pathTrans="data/users", userId=3)
+    stocks = ["AAPL", "MSFT", "TSLA", "ORACLE","CSCO", "IBM", "META", "BAC", "BMW"]
+    return [stocks[i] for i in ids]
 
 # Define the function to get the best stock features
 def get_the_best_stock_features_that_user_likes():
@@ -89,6 +92,5 @@ while True:
     if event == 'Send':
         chat_response = Chat(values['-CHATINPUT-'])
         window['-CHATRESPONSE-'].update(chat_response[0])
-
 # Close the window
 window.close()
