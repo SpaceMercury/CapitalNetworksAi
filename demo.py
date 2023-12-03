@@ -15,9 +15,7 @@ def Chat(txt):
 
 # Define the function to get the best 5 stocks
 def get_best_5_stocks():
-    ids, scores = recommenderSys(pathTrans="data/users", userId=3)
-    stocks = ["AAPL", "MSFT", "TSLA", "ORACLE","CSCO", "IBM", "META", "BAC", "BMW"]
-    return [stocks[i] for i in ids]
+    return ["AAPL", "MSFT", "TSLA", "ORACLE","CSCO"]
 
 # Define the function to get the best stock features
 def get_the_best_stock_features_that_user_likes():
