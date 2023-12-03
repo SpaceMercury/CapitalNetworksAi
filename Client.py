@@ -44,6 +44,24 @@ class CLIENT:
     def client_to_csv(self):
         df = pd.DataFrame(self.transactions)
         df.to_csv(self.name + '.csv')
+
+    def update_first_column(self):
+        for transaction in self.transactions:
+            transaction['CLIENT'] = self.name
+            
+
+
+    def  AddSyntheticData(self, num_samples=100):
+        # create a synthetic data and add it to the client
+        df = pd.DataFrame(self.transactions)
+        synthetic_df = createSyntheticData(df, num_samples=num_samples)
+        list_of_vectors = create_list_of_vectors(synthetic_df)
+        self.transactions = self.transactions + list_of_vectors
+
+       
+
+
+
     
 
         
@@ -88,16 +106,6 @@ class CLIENT:
         plt.show()
 
 
-
-def bagOfFeature(list_of_vectors):
-    bagOfFeature = {}
-    for vec in list_of_vectors:
-        for i in range(1, len(vec)):
-            if df.columns[i] not in bagOfFeature:
-                bagOfFeature[df.columns[i]] = []
-            if vec[i] not in bagOfFeature[df.columns[i]]:
-                bagOfFeature[df.columns[i]].append(vec[i])
-    return 
 
 def list_of_features(list_of_vectors):
     list_of_features = []
@@ -179,7 +187,7 @@ import numpy as np
 import pandas as pd
 from sklearn.utils import shuffle
 
-def createSyntheticData(df, num_samples=100):
+def createSyntheticData(df, num_samples=50):
     # Prepare a container for synthetic samples
     synthetic_samples = []
 
@@ -190,8 +198,16 @@ def createSyntheticData(df, num_samples=100):
 
         # Modify only numerical values
         for col in df.columns:
-            if np.issubdtype(df[col].dtype, np.number):
-                random_row[col] = random_row[col].apply(lambda x: x * np.random.uniform(0.95, 1.05))
+            #if col != "CLIENT"
+            if col != "CLIENT" and col != "NAME" and col != "PRODUCT_TYPE" and col != "ACTION" and col != "ACTION.1" and col != "DATE_TRANSACTION" and col != "QTY" and col != "UNIT_PRICE" and col != "ISIN_CODE" and col != "STOCK_LIBELLE" and col != "CURRENCY" and col != "TOTAL_AMOUNT" and col != "ACTION_TYPE" and col != "CHF_CURRENCY" and col != "RATE_EUR" and col != "RATE_USD":
+                if np.issubdtype(df[col].dtype, np.number):
+                    random_row[col] = random_row[col].apply(lambda x: x * np.random.uniform(0.95, 1.05))
+
+            if col == 'DATE_TRANSACTION':
+                # Convert to datetime, add random days, and convert back to string
+                random_row[col] = pd.to_datetime(random_row[col]) + pd.to_timedelta(np.random.randint(1, 1000), unit='D')
+                random_row[col] = random_row[col].dt.strftime('%Y-%m-%d %H:%M:%S')
+
 
         # Add the modified row to the synthetic samples
         synthetic_samples.append(random_row)
