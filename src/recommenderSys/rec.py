@@ -17,7 +17,7 @@ def dataClean(pathUsers):
     df_transactions = pd.concat([pd.read_csv(file) for file in transaction_files], ignore_index=True)
     print(df_transactions.head())
 
-    transaction_lookup = df_transactions[['CLIENT', 'StockFeature_uuid', 'StockFeature_shortName', 'QTY']].drop_duplicates()
+    transaction_lookup = df_transactions[['CLIENT', 'Stockfeature_uuid', 'StockFeature_shortName', 'QTY']].drop_duplicates()
 
     cleaned_transactions = df_transactions[['CLIENT', 'StockFeature_uuid', 'QTY']].drop_duplicates()
     print(f"Client Head: \n {cleaned_transactions['CLIENT'].head()}")
@@ -67,23 +67,21 @@ def recommendationOutput(product_train, alpha, userId):
     #user_vecs, stock_vecs = implicit.alternating_least_squares((product_train * alpha).astype('double'), factors= 20, regularization = 0.1, iterations = 50)
 
     #user_vecs[0,:].dot(stock_vecs).toarray()[0,:5]
-
-    # Print highest scores
-    print(scores)
     return ids, scores
 
-def recommenderSys(pathTrans):
+def recommenderSys(pathTrans, userId):
     print(f"{pathTrans}")
     purchases_sparse = dataClean(pathTrans)
     print(f"Purchase Sparce \n {purchases_sparse}")
 
     product_train, product_test, product_users_altered = make_train(purchases_sparse, pct_test = 0.2)
-    ids, scores = recommendationOutput(product_train, alpha=0.1, userId=0)
+    ids, scores = recommendationOutput(product_train, alpha=0.1, userId=userId)
     return ids, scores
 
 def main():
     pathTrans = f"data/users"
-    ids, scores = recommenderSys(pathTrans)
+    userId = 1
+    ids, scores = recommenderSys(pathTrans, userId)
     print(ids)
     print(scores)
 
