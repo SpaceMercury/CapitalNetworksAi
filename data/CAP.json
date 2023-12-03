@@ -1,0 +1,34 @@
+{
+    "TICKER": "CAP",
+    "stockFeature": {
+        "quoteType": "NONE",
+        "symbol": "CAP",
+        "underlyingSymbol": "CAP",
+        "uuid": "db5ce5cb-1b12-3dac-ae45-84e881e1451f",
+        "messageBoardId": "finmb_599084614",
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "VinFast IPO: Company value passes Ford, GM at $85 billion - Automotive News Europe",
+            "description": "VinFast IPO: Company value passes Ford, GM at $85 billion  Automotive News Europe",
+            "published date": "Wed, 16 Aug 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Over 75 pc of Consumer Product Organizations & Retailers Embrace ... - Indian Retailer",
+            "description": "Over 75 pc of Consumer Product Organizations & Retailers Embrace ...  Indian Retailer",
+            "published date": "Tue, 21 Nov 2023 07:05:40 GMT"
+        },
+        {
+            "title": "How 'The Beauty Sale' on Amazon Beauty is Set to Disrupt Black ... - Indian Retailer",
+            "description": "How 'The Beauty Sale' on Amazon Beauty is Set to Disrupt Black ...  Indian Retailer",
+            "published date": "Fri, 24 Nov 2023 11:20:40 GMT"
+        },
+        {
+            "title": "{Stores of the Future} How Les Petits is Revolutionizing Luxury ... - Indian Retailer",
+            "description": "{Stores of the Future} How Les Petits is Revolutionizing Luxury ...  Indian Retailer",
+            "published date": "Tue, 28 Nov 2023 13:09:28 GMT"
+        }
+    ]
+}

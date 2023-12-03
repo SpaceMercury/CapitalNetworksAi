@@ -1,0 +1,38 @@
+{
+    "TICKER": "MMK",
+    "stockFeature": {
+        "exchange": "YHD",
+        "quoteType": "MUTUALFUND",
+        "symbol": "MMK",
+        "underlyingSymbol": "MMK",
+        "firstTradeDateEpochUtc": 1167748200,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "00afc644-9b1d-339f-864e-a2ca3e56af77",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "Mayr-Melnhof Karton AG : Reduction of strategic investment and ... - Marketscreener.com",
+            "description": "Mayr-Melnhof Karton AG : Reduction of strategic investment and ...  Marketscreener.com",
+            "published date": "Mon, 20 Nov 2023 08:00:00 GMT"
+        },
+        {
+            "title": "Mayr-Melnhof Karton AG : MM reports results for the first three ... - Marketscreener.com",
+            "description": "Mayr-Melnhof Karton AG : MM reports results for the first three ...  Marketscreener.com",
+            "published date": "Tue, 07 Nov 2023 08:00:00 GMT"
+        },
+        {
+            "title": "A Dark Cloud Is Looming Over Chemical Stocks - OilPrice.com",
+            "description": "A Dark Cloud Is Looming Over Chemical Stocks  OilPrice.com",
+            "published date": "Sat, 24 Jun 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Innovation Ranking - Clinical Trials Arena",
+            "description": "Innovation Ranking  Clinical Trials Arena",
+            "published date": "Tue, 17 Oct 2023 09:39:11 GMT"
+        }
+    ]
+}

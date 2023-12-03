@@ -1,0 +1,39 @@
+{
+    "TICKER": "BNP",
+    "stockFeature": {
+        "exchange": "YHD",
+        "quoteType": "MUTUALFUND",
+        "symbol": "BNP",
+        "underlyingSymbol": "BNP",
+        "shortName": "14831",
+        "firstTradeDateEpochUtc": 918052200,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "9db3753c-90d6-38a4-9c0d-a47853e39654",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "Bank rescues ease crisis fears, investors still wary - Reuters",
+            "description": "Bank rescues ease crisis fears, investors still wary  Reuters",
+            "published date": "Fri, 17 Mar 2023 07:00:00 GMT"
+        },
+        {
+            "title": "LONDON BRIEFING: PizzaExpress owner makes play for ... - Morningstar",
+            "description": "LONDON BRIEFING: PizzaExpress owner makes play for ...  Morningstar",
+            "published date": "Thu, 26 Oct 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Investors | Share Price & Information - Airbus",
+            "description": "Investors | Share Price & Information  Airbus",
+            "published date": "Wed, 03 Nov 2021 08:06:45 GMT"
+        },
+        {
+            "title": "CREDIT AGRICOLE SA: Second quarter and first half 2023 ... - GlobeNewswire",
+            "description": "CREDIT AGRICOLE SA: Second quarter and first half 2023 ...  GlobeNewswire",
+            "published date": "Fri, 04 Aug 2023 07:00:00 GMT"
+        }
+    ]
+}
