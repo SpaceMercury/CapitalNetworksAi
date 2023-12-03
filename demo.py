@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 import random as rd
 import src.LLM_chatbot.prompter as chatbot
+import numpy as np
 
 # Define the advisor function
 def advisor(stock, features):
@@ -8,7 +9,8 @@ def advisor(stock, features):
 
 # Define the chatbot function
 def Chat(txt):
-    return chatbot.chatrequest("AAPL", txt)
+    return chatbot.chatrequest(last_stock, txt, chat_response[1])
+
 
 # Define the function to get the best 5 stocks
 def get_best_5_stocks():
@@ -61,10 +63,10 @@ layout = [
     [sg.Text("", key='-CHATRESPONSE-', size=(200, 10), font=font_small)],
     [sg.Column([[]], expand_x=True), sg.Button('Exit', size=(10, 2), font=font_small, button_color=('#f0f0f0', '#d9534f'), border_width=2)]
 ]
-
+last_stock = 'AAPL'
 # Create the window
 window = sg.Window('Powered by AIs Network Group', layout, size=(window_width, window_height), background_color=bg_color)
-
+chat_response= np.empty(2)
 # Initial stock features
 stocks_features = initialize_stock_features()
 window['-FEATURES-'].update(create_stock_summary())
@@ -79,13 +81,14 @@ while True:
     window['-FEATURES-'].update(create_stock_summary())
 
     if event in get_best_5_stocks():
+        last_stock = event
         stock_features = stocks_features[event]
         advice = advisor(event, stock_features)
         window['-ADVISOR-'].update(chatbot.clickrequest(event))
 
     if event == 'Send':
         chat_response = Chat(values['-CHATINPUT-'])
-        window['-CHATRESPONSE-'].update(chat_response)
+        window['-CHATRESPONSE-'].update(chat_response[0])
 
 # Close the window
 window.close()
