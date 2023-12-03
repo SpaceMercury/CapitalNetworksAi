@@ -47,7 +47,7 @@ class CLIENT:
 
     def update_first_column(self):
         for transaction in self.transactions:
-            transaction['CLIENT'] = self.name
+            transaction['CLIENT'] = self.name 
             
 
 
