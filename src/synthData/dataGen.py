@@ -16,7 +16,7 @@ def add_ticker_news(ticker):
     cleanNews(news)
 
     # Load the existing data
-    with open(f'data/{ticker}.json', 'r') as f:
+    with open(f'data/synthetic/{ticker}.json', 'r') as f:
         data = json.load(f)
 
     # Add the news to the data
