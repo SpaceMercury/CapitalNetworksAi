@@ -4,9 +4,6 @@ from openai import OpenAI
 import os
 
 
-
-
-
 def make_reccomendation_prompt(user_input, previous_prompt):
 
     answer = str("")
@@ -17,10 +14,10 @@ def make_reccomendation_prompt(user_input, previous_prompt):
 
     ## Get the stock JSON file
     with open ('data/AAPL.json') as f:
-        stock_json = json.load(f)
+        ticker_json = json.load(f)
 
     ## TODO: Treat JSON data as a string and append it to the prompt
-    answer = f"{answer} {stock_json}"
+    answer = f"{answer} {ticker_json}"
 
     answer = answer + "Q: " + user_input
     return answer
@@ -34,7 +31,7 @@ def callGPT(prompt):
         messages=[
             {
                 "role": "user",
-                "content": [{"type": "text", "text": "Given the following context of conversation, of the form Q:{{question}} A:{{answer}} give an answer to the prompt of the user. If there is no context history and just a question, answer it to the best of your abilities. NEVER INCITE A USER TO BUY A STOCK, ONLY RELAY INFORMATION SO THE USER CAN MAKE AN INFORMED DECISION. Remember to be precise in your answers, use detail to help the user to get as much useful information as he can obtain without overwhelming him with info. Here is the context history and the question, the question starts at Q:" + prompt}],
+                "content": [{"type": "text", "text": "Given the following context of conversation, of the form Q:{{question}} A:{{answer}} give an answer to the prompt of the user. If there is no context history and just a question, answer it to the best of your abilities. NEVER INCITE A USER TO BUY A STOCK, ONLY RELAY INFORMATION SO THE USER CAN MAKE AN INFORMED DECISION. Remember to be precise in your answers, use details from the context history about the company to help the user to get as much useful information as he can obtain without overwhelming him with info. Here is the context history and the question, the question starts at Q:" + prompt}],
             }
         ],
         max_tokens = 300,
@@ -46,8 +43,6 @@ def callGPT(prompt):
 def main():
 
     context_history = None
-
-    
 
     #infinte loop for user asking questions to bot
     while(True):
