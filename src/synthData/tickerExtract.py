@@ -5,37 +5,27 @@ import numpy as np
 
 def findStockTickers(data_csv):
     df = pd.read_csv(data_csv)
-    df = df['ISIN_CODE']
-    original_tickers = df.unique()
-    return original_tickers
+    df = df[['StockFeature_underlyingSymbol', 'NAME']]
+    #get unique elements of df stock tickers
+    original_tickers = df['StockFeature_underlyingSymbol'].unique()
 
+    #get unique elements of df stock names from tickers
+    original_names = df['NAME'].unique()
 
-def isin_to_ticker(isin):
-    OpenFIGI_APIKEY="d3251d8b-e60a-4668-b071-a38176ce11d8"
-    url = 'https://api.openfigi.com/v3/mapping'
-    headers = {
-        'Content-Type': 'application/json',
-        'X-OPENFIGI-APIKEY': OpenFIGI_APIKEY
-    }
-    data = [
-        {
-            "idType": "ID_ISIN",
-            "idValue": isin
-        }
-    ]
-    response = requests.post(url, headers=headers, data=json.dumps(data))
-    if response.status_code == 200:
-        data = json.loads(response.text)
-        if data and 'data' in data[0]:
-            return data[0]['data'][0]['ticker']
-    return None
-
+    return original_tickers, original_names
 
 def tickerListFinder(csv_path):
-    isin = findStockTickers(csv_path)
-    print(isin)
-    arr = []
-    for i in isin:
-        arr.append(isin_to_ticker(i))
-    return arr
-    
+    arr = findStockTickers(csv_path)
+    tuple_list = []
+    for i in range(0, len(arr[0])):
+        tuple_list.append((arr[0][i], arr[1][i]))
+    return tuple_list
+
+
+def main():
+    ticker_names = tickerListFinder('data/synthetic/user0.csv')
+    print(ticker_names)
+    print(tickerListFinder('data/synthetic/user0.csv'))
+
+if __name__ == "__main__":
+    main()
