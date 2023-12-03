@@ -81,11 +81,11 @@ def get_percentage_of_use(user_id, feature, description):
     return user_json
 
 def chatrequest(stock, user_input):
-    produce_user_info("0")
+    produce_user_info("3")
     context_history = None
 
     # 2. Chatbot processes question with the JSON file of the stock the user is asking about
-    user_reccomendation_prompt = make_reccomendation_prompt(str(stock), "0", user_input,context_history)
+    user_reccomendation_prompt = make_reccomendation_prompt(str(stock), "3", user_input,context_history)
     chatbot_response = callGPT(user_reccomendation_prompt)
 
     # 3. Chatbot updates context history
@@ -97,7 +97,7 @@ def chatrequest(stock, user_input):
 
 def clickrequest(stock):
     # 1. Chatbot processes question with the JSON file of the stock the user is asking about
-    user_reccomendation_prompt = make_reccomendation_prompt(str(stock), "0", "Give me some information about this stock in general, related to me and to the current circumstances", None)
+    user_reccomendation_prompt = make_reccomendation_prompt(str(stock), "3", "Give me some information about this stock in general, related to me and to the current circumstances", None)
     chatbot_response = callGPT(user_reccomendation_prompt)
 
     # Display to user)
