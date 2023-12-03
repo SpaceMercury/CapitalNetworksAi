@@ -7,7 +7,7 @@ from scipy.sparse.linalg import spsolve
 
 import glob
 
-def genFit(path):
+def dataClean(pathUsers, pathStocks):
     # Get a list of all user transaction JSON files
     transaction_files = glob.glob(f'{path}/*.json')
 
