@@ -1,12 +1,6 @@
 # CapitalNetworksAi
 
-### LLM - Chatbot
-
-Prompt engineering based on:
-Paper: https://arxiv.org/pdf/2307.15780.pdf
-https://www.promptingguide.ai
-
-# LauzHack 2023 - CapitalNetworksAI
+## LauzHack 2023 - CapitalNetworksAI
 
 ## Overview
 
@@ -24,12 +18,12 @@ Personalized stock reccomendation system based on user's risk profile, preferenc
 - Personalized reccomendation system
 - AI chatbot
 
-### Data Creation and Cleaning
-
-### Personalized Reccomendation System
-
 ### LLM Chatbot
 
 The LLM chatbot uses the GPT-4-turbo model to generate responses. The LLM model is a language model that uses a prompt to generate a response. The prompt is a concatenation of the user's previous messages and the chatbot's previous responses. The LLM model is trained on the Reddit dataset. The LLM model is prompted with the user's previous messages and the chatbot's previous responses. The model is then used to generate a response to the user's message. We used a number of techniques from different sources to improve the performance of the LLM model through prompt engineering.
+
+### Installation and execution
+
+Start by cloning the repo locally, then you will need to associate an API key to the project from OpenAI as we are using GPT-4-turbo. Once you have that set up, there is a demo.py file that you need to run, which consists of the graphical interface to be able to use our chatbot and implementation algorithm. Make sure you have all the dependencies installed, there is a requirements.txt, and after that you are good to go!
 
 ---
