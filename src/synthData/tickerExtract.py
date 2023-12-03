@@ -24,8 +24,7 @@ def tickerListFinder(csv_path):
 
 def main():
     ticker_names = tickerListFinder('data/synthetic/user0.csv')
-    print(ticker_names)
-    print(tickerListFinder('data/synthetic/user0.csv'))
+
 
 if __name__ == "__main__":
     main()

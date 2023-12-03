@@ -14,11 +14,9 @@ def add_ticker_news(name, ticker):
 
     news = getStockNews(name)
     cleanNews(news)
-    print(news)
 
     # Load the existing data
     with open(f'data/{ticker}.json', 'r') as f:
-
         data = json.load(f)
     
     # If the data is empty, put nothing in it
