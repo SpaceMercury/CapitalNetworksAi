@@ -1,4 +1,3 @@
-import implicit
 import pandas as pd
 import scipy.sparse as sparse
 import numpy as np
@@ -17,10 +16,12 @@ def dataClean(pathUsers):
     df_transactions = pd.concat([pd.read_csv(file) for file in transaction_files], ignore_index=True)
     print(df_transactions.head())
 
-    transaction_lookup = df_transactions[['CLIENT', 'Stockfeature_uuid', 'StockFeature_shortName', 'QTY']].drop_duplicates()
+    transaction_lookup = df_transactions[['CLIENT', 'StockFeature_uuid', 'StockFeature_shortName', 'QTY']].drop_duplicates()
 
     cleaned_transactions = df_transactions[['CLIENT', 'StockFeature_uuid', 'QTY']].drop_duplicates()
     print(f"Client Head: \n {cleaned_transactions['CLIENT'].head()}")
+    # Removing NAN values 
+    cleaned_transactions = cleaned_transactions[cleaned_transactions['CLIENT'].notna()]
     cleaned_transactions['CLIENT'] = cleaned_transactions['CLIENT'].astype(int)
     grouped_cleaned_transactions = cleaned_transactions.groupby(['CLIENT', 'StockFeature_uuid']).sum().reset_index()
     grouped_cleaned_transactions['QTY'] = np.where(grouped_cleaned_transactions['QTY'] > 0, 1, grouped_cleaned_transactions['QTY']) # TODO: This correct?!?!
