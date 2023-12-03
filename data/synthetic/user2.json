@@ -1,0 +1,13 @@
+{
+    "name": "user2",
+    "transactions": {
+        "_attrs": {},
+        "_flags": {
+            "_allows_duplicate_labels": true,
+            "_obj": "<weakref at 0x7fe4b7e3d9a0; to 'DataFrame' at 0x7fe4b7e2ef70>"
+        },
+        "_is_copy": null,
+        "_item_cache": {},
+        "_mgr": {}
+    }
+}
