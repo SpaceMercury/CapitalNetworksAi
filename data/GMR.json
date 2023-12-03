@@ -1,0 +1,38 @@
+{
+    "TICKER": "GMR",
+    "stockFeature": {
+        "exchange": "YHD",
+        "quoteType": "MUTUALFUND",
+        "symbol": "GMR",
+        "underlyingSymbol": "GMR",
+        "shortName": "794326",
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "7cd93b4a-6b0f-3e3e-96bb-902f299f8aad",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "VinFast IPO: Company value passes Ford, GM at $85 billion - Automotive News Europe",
+            "description": "VinFast IPO: Company value passes Ford, GM at $85 billion  Automotive News Europe",
+            "published date": "Wed, 16 Aug 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Over 75 pc of Consumer Product Organizations & Retailers Embrace ... - Indian Retailer",
+            "description": "Over 75 pc of Consumer Product Organizations & Retailers Embrace ...  Indian Retailer",
+            "published date": "Tue, 21 Nov 2023 07:05:40 GMT"
+        },
+        {
+            "title": "How 'The Beauty Sale' on Amazon Beauty is Set to Disrupt Black ... - Indian Retailer",
+            "description": "How 'The Beauty Sale' on Amazon Beauty is Set to Disrupt Black ...  Indian Retailer",
+            "published date": "Fri, 24 Nov 2023 11:20:40 GMT"
+        },
+        {
+            "title": "{Stores of the Future} How Les Petits is Revolutionizing Luxury ... - Indian Retailer",
+            "description": "{Stores of the Future} How Les Petits is Revolutionizing Luxury ...  Indian Retailer",
+            "published date": "Tue, 28 Nov 2023 13:09:28 GMT"
+        }
+    ]
+}

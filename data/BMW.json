@@ -1,0 +1,38 @@
+{
+    "TICKER": "BMW",
+    "stockFeature": {
+        "exchange": "NMS",
+        "quoteType": "ECNQUOTE",
+        "symbol": "BMW",
+        "underlyingSymbol": "BMW",
+        "firstTradeDateEpochUtc": 839511000,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "bcb48ddd-ff8c-34b5-b452-ee573b4db770",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "Apple marks World AIDS Day with (RED) - Apple",
+            "description": "Apple marks World AIDS Day with (RED)  Apple",
+            "published date": "Fri, 01 Dec 2023 08:00:39 GMT"
+        },
+        {
+            "title": "A disability advocate preserves his voice with iPhone - Apple",
+            "description": "A disability advocate preserves his voice with iPhone  Apple",
+            "published date": "Thu, 30 Nov 2023 14:00:40 GMT"
+        },
+        {
+            "title": "There is a big flaw that Apple Maps must fix in order to compete with ... - PhoneArena",
+            "description": "There is a big flaw that Apple Maps must fix in order to compete with ...  PhoneArena",
+            "published date": "Sat, 02 Dec 2023 22:26:51 GMT"
+        },
+        {
+            "title": "Apple suffers setback in fight against EU's $14 billion tax order - Reuters.com",
+            "description": "Apple suffers setback in fight against EU's $14 billion tax order  Reuters.com",
+            "published date": "Thu, 09 Nov 2023 08:00:00 GMT"
+        }
+    ]
+}

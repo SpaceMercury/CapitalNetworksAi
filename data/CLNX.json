@@ -1,0 +1,38 @@
+{
+    "TICKER": "CLNX",
+    "stockFeature": {
+        "exchange": "YHD",
+        "quoteType": "MUTUALFUND",
+        "symbol": "CLNX",
+        "underlyingSymbol": "CLNX",
+        "firstTradeDateEpochUtc": 1527773400,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "092f451b-16da-3fcf-90c6-889eb3f3f490",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "BMW Z3 M Coupe, Plymouth Valiant Signet 200, Royal Enfield ... - The Autopian",
+            "description": "BMW Z3 M Coupe, Plymouth Valiant Signet 200, Royal Enfield ...  The Autopian",
+            "published date": "Fri, 01 Dec 2023 21:28:25 GMT"
+        },
+        {
+            "title": "Dealer anniversaries - Automotive News",
+            "description": "Dealer anniversaries  Automotive News",
+            "published date": "Fri, 01 Dec 2023 17:23:24 GMT"
+        },
+        {
+            "title": "Senator Markey Queries 14 Automakers about Invasive Data ... - Ed Markey",
+            "description": "Senator Markey Queries 14 Automakers about Invasive Data ...  Ed Markey",
+            "published date": "Fri, 01 Dec 2023 16:42:43 GMT"
+        },
+        {
+            "title": "BMW recalls SUVs due to potential for Takata air bag inflators to blow apart - KFXL Fox Nebraska",
+            "description": "BMW recalls SUVs due to potential for Takata air bag inflators to blow apart  KFXL Fox Nebraska",
+            "published date": "Sat, 02 Dec 2023 19:08:16 GMT"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "TICKER": "MB",
+    "stockFeature": {
+        "quoteType": "NONE",
+        "symbol": "MB",
+        "underlyingSymbol": "MB",
+        "uuid": "8d8fcc1a-bd55-3c5f-a5db-faa57d59cb67",
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "DBRS Morningstar Upgrades Credit Ratings on Quarzo S.r.l. ... - DBRS Morningstar",
+            "description": "DBRS Morningstar Upgrades Credit Ratings on Quarzo S.r.l. ...  DBRS Morningstar",
+            "published date": "Mon, 13 Nov 2023 17:14:13 GMT"
+        },
+        {
+            "title": "Proxy adviser ISS backs Mediobanca's outgoing board slate for ... - Reuters.com",
+            "description": "Proxy adviser ISS backs Mediobanca's outgoing board slate for ...  Reuters.com",
+            "published date": "Wed, 11 Oct 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Group of Italian investors in Mediobanca backs new term for CEO ... - Reuters",
+            "description": "Group of Italian investors in Mediobanca backs new term for CEO ...  Reuters",
+            "published date": "Mon, 25 Sep 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Fitch Affirms Mediobanca at 'BBB'; Outlook Stable - Fitch Ratings",
+            "description": "Fitch Affirms Mediobanca at 'BBB'; Outlook Stable  Fitch Ratings",
+            "published date": "Thu, 16 Mar 2023 07:00:00 GMT"
+        }
+    ]
+}

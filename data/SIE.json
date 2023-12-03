@@ -1,0 +1,39 @@
+{
+    "TICKER": "SIE",
+    "stockFeature": {
+        "exchange": "YHD",
+        "quoteType": "MUTUALFUND",
+        "symbol": "SIE",
+        "underlyingSymbol": "SIE",
+        "shortName": "416520",
+        "firstTradeDateEpochUtc": 839856600,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "92ccb9ae-6c8d-393d-9f13-ec036ef598aa",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "A hist\u00f3ria por tr\u00e1s da cria\u00e7\u00e3o da Siemens AG \u2013 Parte II - Mobile Time",
+            "description": "A hist\u00f3ria por tr\u00e1s da cria\u00e7\u00e3o da Siemens AG \u2013 Parte II  Mobile Time",
+            "published date": "Sat, 02 Dec 2023 00:15:00 GMT"
+        },
+        {
+            "title": "A nomogram based on psoas muscle index predicting long-term ... - Nature.com",
+            "description": "A nomogram based on psoas muscle index predicting long-term ...  Nature.com",
+            "published date": "Sat, 02 Dec 2023 04:19:12 GMT"
+        },
+        {
+            "title": "Ustawa wiatrakowa ma ratowa\u0107 niemiecki przemys\u0142? Eksperci o ... - Money.pl",
+            "description": "Ustawa wiatrakowa ma ratowa\u0107 niemiecki przemys\u0142? Eksperci o ...  Money.pl",
+            "published date": "Fri, 01 Dec 2023 19:56:30 GMT"
+        },
+        {
+            "title": "FG, Germany Sign Power Infrastructure Agreement - New Telegraph Newspaper",
+            "description": "FG, Germany Sign Power Infrastructure Agreement  New Telegraph Newspaper",
+            "published date": "Fri, 01 Dec 2023 22:05:22 GMT"
+        }
+    ]
+}

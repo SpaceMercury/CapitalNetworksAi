@@ -1,0 +1,38 @@
+{
+    "TICKER": "RWE",
+    "stockFeature": {
+        "exchange": "NMS",
+        "quoteType": "ECNQUOTE",
+        "symbol": "RWE",
+        "underlyingSymbol": "RWE",
+        "firstTradeDateEpochUtc": 975335400,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "b6a96f1a-4a8d-365a-9db3-eea1287618ce",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "Brace for the Wind and Electric-Vehicle Bailouts - MSN",
+            "description": "Brace for the Wind and Electric-Vehicle Bailouts  MSN",
+            "published date": "Sun, 29 Oct 2023 17:04:52 GMT"
+        },
+        {
+            "title": "Running with Ed exceeds goal, raising over $350,000 for education - KPCW",
+            "description": "Running with Ed exceeds goal, raising over $350,000 for education  KPCW",
+            "published date": "Mon, 22 May 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Executive Bodies - Volkswagen Group",
+            "description": "Executive Bodies  Volkswagen Group",
+            "published date": "Tue, 13 Jun 2023 06:28:40 GMT"
+        },
+        {
+            "title": "Klipp torsdag: Regjeringen lovte str\u00f8mtiltak f\u00f8r vinteren \u2013 kommer til ... - Europower",
+            "description": "Klipp torsdag: Regjeringen lovte str\u00f8mtiltak f\u00f8r vinteren \u2013 kommer til ...  Europower",
+            "published date": "Thu, 30 Nov 2023 07:33:09 GMT"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "TICKER": "VOW",
+    "stockFeature": {
+        "exchange": "NMS",
+        "quoteType": "ECNQUOTE",
+        "symbol": "VOW",
+        "underlyingSymbol": "VOW",
+        "firstTradeDateEpochUtc": 1405949400,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "d5eca913-6cbc-37f0-b8c2-02c76c45fc0b",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "Alstom wins \u20ac300m Paris RER CBTC framework | News - Railway Gazette",
+            "description": "Alstom wins \u20ac300m Paris RER CBTC framework | News  Railway Gazette",
+            "published date": "Mon, 27 Nov 2023 09:11:36 GMT"
+        },
+        {
+            "title": "Siemens Energy's turbine troubles rattle wind sector - Reuters.com",
+            "description": "Siemens Energy's turbine troubles rattle wind sector  Reuters.com",
+            "published date": "Fri, 07 Jul 2023 07:00:00 GMT"
+        },
+        {
+            "title": "IoT applications and cybersecurity - Medium-voltage \u2013 Power ... - siemens.com",
+            "description": "IoT applications and cybersecurity - Medium-voltage \u2013 Power ...  siemens.com",
+            "published date": "Mon, 13 Feb 2023 12:55:04 GMT"
+        },
+        {
+            "title": "Siemens Energy's shares tumble as wind turbine troubles deepen - Reuters.com",
+            "description": "Siemens Energy's shares tumble as wind turbine troubles deepen  Reuters.com",
+            "published date": "Fri, 23 Jun 2023 07:00:00 GMT"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "TICKER": "CHV",
+    "stockFeature": {
+        "exchange": "YHD",
+        "quoteType": "MUTUALFUND",
+        "symbol": "CHV",
+        "underlyingSymbol": "CHV",
+        "firstTradeDateEpochUtc": 962112600,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "c0c75ac1-bff5-3630-8fa5-65c0d3c82843",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "Intel, Roku and Procter & Gamble rise premarket; Chevron, Ford fall ... - Investing.com",
+            "description": "Intel, Roku and Procter & Gamble rise premarket; Chevron, Ford fall ...  Investing.com",
+            "published date": "Fri, 28 Jul 2023 07:00:00 GMT"
+        },
+        {
+            "title": "[Video] Screaming Chevron-Ford monsters Philip Island | GRR - Goodwood Road and Racing",
+            "description": "[Video] Screaming Chevron-Ford monsters Philip Island | GRR  Goodwood Road and Racing",
+            "published date": "Tue, 30 May 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Sofia Richie's Cheugy Chevron Print Outfit Is A Total 2010 Revival - Bustle",
+            "description": "Sofia Richie's Cheugy Chevron Print Outfit Is A Total 2010 Revival  Bustle",
+            "published date": "Mon, 31 Jul 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Exxon in Talks With Tesla, Ford, VW on Supplying Lithium - Bloomberg",
+            "description": "Exxon in Talks With Tesla, Ford, VW on Supplying Lithium  Bloomberg",
+            "published date": "Mon, 31 Jul 2023 07:00:00 GMT"
+        }
+    ]
+}

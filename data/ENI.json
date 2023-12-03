@@ -1,0 +1,38 @@
+{
+    "TICKER": "ENI",
+    "stockFeature": {
+        "exchange": "YHD",
+        "quoteType": "MUTUALFUND",
+        "symbol": "ENI",
+        "underlyingSymbol": "ENI",
+        "shortName": "456658",
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "0390151c-5034-3ca8-a7d1-88265ee8b29b",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "La Bolsa de Mil\u00e1n sube el 0,69 % impulsada a\u00fan por la pausa en las subidas de los tipos - Infobae America",
+            "description": "La Bolsa de Mil\u00e1n sube el 0,69 % impulsada a\u00fan por la pausa en las subidas de los tipos  Infobae America",
+            "published date": "Fri, 03 Nov 2023 07:00:00 GMT"
+        },
+        {
+            "title": "La Bolsa de Mil\u00e1n cierra estable con un escaso aumento del 0,01 % - Infobae",
+            "description": "La Bolsa de Mil\u00e1n cierra estable con un escaso aumento del 0,01 %  Infobae",
+            "published date": "Wed, 22 Nov 2023 08:00:00 GMT"
+        },
+        {
+            "title": "Premarket Mover: Equinor ASA (EQNR) Down 0.99% - InvestorsObserver",
+            "description": "Premarket Mover: Equinor ASA (EQNR) Down 0.99%  InvestorsObserver",
+            "published date": "Wed, 01 Nov 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Borsa: la seduta a Piazza Affari di oggi, 3 novembre 2023 - L'Unione Sarda.it",
+            "description": "Borsa: la seduta a Piazza Affari di oggi, 3 novembre 2023  L'Unione Sarda.it",
+            "published date": "Fri, 03 Nov 2023 07:00:00 GMT"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "TICKER": "LHA",
+    "stockFeature": {
+        "exchange": "NMS",
+        "quoteType": "ECNQUOTE",
+        "symbol": "LHA",
+        "underlyingSymbol": "LHA",
+        "firstTradeDateEpochUtc": 1198852200,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "50d751ce-079b-3ee2-bffe-d73c67597b9d",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "ROUNDUP: Lufthansa bl\u00e4st Anteilsverkauf von Lufthansa Technik ab - boerse-express.com",
+            "description": "ROUNDUP: Lufthansa bl\u00e4st Anteilsverkauf von Lufthansa Technik ab  boerse-express.com",
+            "published date": "Thu, 30 Nov 2023 11:59:00 GMT"
+        },
+        {
+            "title": "Lufthansa-Hauptversammlung: Kritik an Strategie und Qualit\u00e4t - tagesschau.de",
+            "description": "Lufthansa-Hauptversammlung: Kritik an Strategie und Qualit\u00e4t  tagesschau.de",
+            "published date": "Tue, 09 May 2023 11:09:47 GMT"
+        },
+        {
+            "title": "Evotec, Krones, Software AG und Shop Apotheke r\u00fccken in MDAX - tagesschau.de",
+            "description": "Evotec, Krones, Software AG und Shop Apotheke r\u00fccken in MDAX  tagesschau.de",
+            "published date": "Tue, 06 Jun 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Lufthansa fliegt wieder Gewinn ein | tagesschau.de - tagesschau.de",
+            "description": "Lufthansa fliegt wieder Gewinn ein | tagesschau.de  tagesschau.de",
+            "published date": "Fri, 03 Mar 2023 08:00:00 GMT"
+        }
+    ]
+}

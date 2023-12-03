@@ -31,26 +31,26 @@ def add_stockFeature(ticker):
         json.dump(data, f, indent=4)
 
 def main():
-    for i in range(0, 10):
-        ticker_names = tickerListFinder(f'data/synthetic/user{i}.csv')
-        for (ticker,name) in ticker_names:
-            # Data to be written to JSON
-            
-            # File path for the new JSON file
-            file_path = f'data/{ticker}.json'
+#    for i in range(1, 10):
+    ticker_names = tickerListFinder(f'data/extended/JosephExtended1.csv')
+    for (ticker,name) in ticker_names:
+        # Data to be written to JSON
+        
+        # File path for the new JSON file
+        file_path = f'data/{ticker}.json'
 
-            # If file doesn't exist, create it
-            if not os.path.exists(file_path):
-                open(file_path, 'x')
-                with open(f'{file_path}', 'w') as file:
-                    file.write('{}')
-            
-            #print(getStockFeature(ticker))
-            # Writing data to the JSON file
-            
-            add_ticker(ticker)
-            add_stockFeature(ticker)
-            add_ticker_news(name, ticker)
+        # If file doesn't exist, create it
+        if not os.path.exists(file_path):
+            open(file_path, 'x')
+            with open(f'{file_path}', 'w') as file:
+                file.write('{}')
+        
+        #print(getStockFeature(ticker))
+        # Writing data to the JSON file
+        
+        add_ticker(ticker)
+        add_stockFeature(ticker)
+        add_ticker_news(name, ticker)
 
         
 

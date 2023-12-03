@@ -1,0 +1,33 @@
+{
+    "TICKER": "VIE",
+    "stockFeature": {
+        "quoteType": "NONE",
+        "symbol": "VIE",
+        "underlyingSymbol": "VIE",
+        "uuid": "f8829105-0708-3f26-a022-a163e83d6010",
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "Veolia Orchard continues to bloom supporting over 190 schools ... - B31 Voices",
+            "description": "Veolia Orchard continues to bloom supporting over 190 schools ...  B31 Voices",
+            "published date": "Fri, 01 Dec 2023 19:05:46 GMT"
+        },
+        {
+            "title": "Earnings call: Veolia reports strong financial results, confident about ... - Investing.com Nigeria",
+            "description": "Earnings call: Veolia reports strong financial results, confident about ...  Investing.com Nigeria",
+            "published date": "Fri, 10 Nov 2023 16:08:29 GMT"
+        },
+        {
+            "title": "Hot garbage: Inside Australia\u2019s new waste-to-energy facilities - create digital",
+            "description": "Hot garbage: Inside Australia\u2019s new waste-to-energy facilities  create digital",
+            "published date": "Thu, 09 Nov 2023 08:00:00 GMT"
+        },
+        {
+            "title": "Boil water advisory remains in effect for parts of Delaware County, Pennsylvania and Wilmington, Delaware - WPVI-TV",
+            "description": "Boil water advisory remains in effect for parts of Delaware County, Pennsylvania and Wilmington, Delaware  WPVI-TV",
+            "published date": "Thu, 25 May 2023 07:00:00 GMT"
+        }
+    ]
+}

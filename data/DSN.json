@@ -1,0 +1,39 @@
+{
+    "TICKER": "DSN",
+    "stockFeature": {
+        "exchange": "YHD",
+        "quoteType": "MUTUALFUND",
+        "symbol": "DSN",
+        "underlyingSymbol": "DSN",
+        "shortName": "2176",
+        "firstTradeDateEpochUtc": 1288099800,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "8455e1ec-6ab4-3dce-843b-0a858cdeb554",
+        "gmtOffSetMilliseconds": -18000000,
+        "maxAge": 86400,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "Danske Banks Boprisindikator juli & augusti - Danske Bank",
+            "description": "Danske Banks Boprisindikator juli & augusti  Danske Bank",
+            "published date": "Thu, 31 Aug 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Nordea og Danske Bank \u2013 hva n\u00e5? - nhh.no",
+            "description": "Nordea og Danske Bank \u2013 hva n\u00e5?  nhh.no",
+            "published date": "Thu, 03 Aug 2023 07:00:00 GMT"
+        },
+        {
+            "title": "Danske Banks Boprisindikator Januari \u2013 Uppsving i priserna men ... - Danske Bank",
+            "description": "Danske Banks Boprisindikator Januari \u2013 Uppsving i priserna men ...  Danske Bank",
+            "published date": "Tue, 31 Jan 2023 08:00:00 GMT"
+        },
+        {
+            "title": "VM i h\u00e5ndbold \u2013 dag 4 - TV 2 - TV 2",
+            "description": "VM i h\u00e5ndbold \u2013 dag 4 - TV 2  TV 2",
+            "published date": "Sat, 02 Dec 2023 06:00:02 GMT"
+        }
+    ]
+}

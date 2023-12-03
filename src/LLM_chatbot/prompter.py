@@ -49,7 +49,7 @@ def produce_user_info(user_id):
     df = pd.read_csv(f'data/users/user{user_id}.csv')
 
     #add name of user in json
-    user_json.update({"name": "Jonathan"})
+    user_json.update({"name": "Joseph"})
 
     investing = get_percentage_of_use(user_id, 'StockFeature_underlyingSymbol',"investing_percentages")
     user_json.update(investing)
@@ -80,27 +80,19 @@ def get_percentage_of_use(user_id, feature, description):
     
     return user_json
 
-def main():
+def chatrequest(stock, user_input, context_history):
 
-    context_history = None
     produce_user_info("0")
 
-    #infinte loop for user asking questions to bot
-    while(True):
-        # 1. User asks a question
-        user_input = input("Ask a question: ")
+    # 2. Chatbot processes question with the JSON file of the stock the user is asking about
+    user_reccomendation_prompt = make_reccomendation_prompt(str(stock), "0", user_input,context_history)
+    chatbot_response = callGPT(user_reccomendation_prompt)
 
-        # 2. Chatbot processes question with the JSON file of the stock the user is asking about
-        user_reccomendation_prompt = make_reccomendation_prompt("BNP", "0", user_input,context_history)
-        chatbot_response = callGPT(user_reccomendation_prompt)
+    # 3. Chatbot updates context history
+    context_history =  "Q:" + user_input + "\nA:" + chatbot_response
 
-        # 3. Chatbot updates context history
-        context_history =  "Q:" + user_input + "\nA:" + chatbot_response
+    # Display to user)
 
-        # Display to user
-        print(chatbot_response)
+    return [chatbot_response, context_history]
 
-    return 0
 
-if __name__ == "__main__":
-    main()

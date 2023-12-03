@@ -1,0 +1,64 @@
+{
+    "TICKER": "MBG",
+    "stockFeature": {
+        "maxAge": 86400,
+        "priceHint": 2,
+        "previousClose": 26.2,
+        "open": 0.0,
+        "dayLow": 26.1702,
+        "dayHigh": 26.23,
+        "regularMarketPreviousClose": 26.2,
+        "regularMarketOpen": 0.0,
+        "regularMarketDayLow": 26.1702,
+        "regularMarketDayHigh": 26.23,
+        "volume": 41409,
+        "regularMarketVolume": 41409,
+        "averageVolume": 0,
+        "averageVolume10days": 0,
+        "averageDailyVolume10Day": 0,
+        "bid": 0.0,
+        "ask": 0.0,
+        "bidSize": 1300,
+        "askSize": 1200,
+        "fiftyTwoWeekLow": 26.1702,
+        "fiftyTwoWeekHigh": 26.23,
+        "fiftyDayAverage": 26.23,
+        "twoHundredDayAverage": 26.23,
+        "currency": "USD",
+        "exchange": "PCX",
+        "quoteType": "ETF",
+        "symbol": "MBG",
+        "underlyingSymbol": "MBG",
+        "shortName": "SPDR Bloomberg Barclays Mortgag",
+        "longName": "SPDR Bloomberg Barclays Mortgage Backed Bond ETF",
+        "firstTradeDateEpochUtc": 1233325800,
+        "timeZoneFullName": "America/New_York",
+        "timeZoneShortName": "EST",
+        "uuid": "25905934-faeb-3ab3-8fa0-11349ebfca32",
+        "messageBoardId": "finmb_52508821",
+        "gmtOffSetMilliseconds": -18000000,
+        "trailingPegRatio": null
+    },
+    "news": [
+        {
+            "title": "Shell edges out Volkswagen to top the list of companies bringing in the most revenue in Europe - Fortune",
+            "description": "Shell edges out Volkswagen to top the list of companies bringing in the most revenue in Europe  Fortune",
+            "published date": "Wed, 08 Nov 2023 08:00:00 GMT"
+        },
+        {
+            "title": "JEC World 2024 spotlights composites sustainability, innovation ... - CompositesWorld",
+            "description": "JEC World 2024 spotlights composites sustainability, innovation ...  CompositesWorld",
+            "published date": "Fri, 17 Nov 2023 08:00:00 GMT"
+        },
+        {
+            "title": "MERCEDES-BENZ GROUP : Goldman Sachs optimiste sur le dossier - Zonebourse.com",
+            "description": "MERCEDES-BENZ GROUP : Goldman Sachs optimiste sur le dossier  Zonebourse.com",
+            "published date": "Thu, 30 Nov 2023 07:19:11 GMT"
+        },
+        {
+            "title": "Erster Mercedes-Benz Charging Hub in Nord-Amerika im Betrieb - MBpassion.de",
+            "description": "Erster Mercedes-Benz Charging Hub in Nord-Amerika im Betrieb  MBpassion.de",
+            "published date": "Thu, 16 Nov 2023 08:00:00 GMT"
+        }
+    ]
+}
