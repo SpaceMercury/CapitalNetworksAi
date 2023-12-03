@@ -1,6 +1,8 @@
 import PySimpleGUI as sg
 import random as rd
 import src.LLM_chatbot.prompter as chatbot
+from src.recommenderSys.rec import recommenderSys
+import openai
 
 # Define the advisor function
 def advisor(stock, features):
@@ -11,8 +13,9 @@ def Chat(txt):
     return chatbot.chatrequest(last_stock_clicked, txt)
 
 # Define the function to get the best 5 stocks
-def get_best_5_stocks():
-    return chatbot.clickrequest
+def get_best_5_stocks(user):
+    ids, scores = recommenderSys(pathTrans="data/users", userId=user)
+    return scores
 
 # Define the function to get the best stock features
 def get_the_best_stock_features_that_user_likes():
@@ -20,7 +23,7 @@ def get_the_best_stock_features_that_user_likes():
 
 # Function to initialize stock features with random values
 def initialize_stock_features():
-    return {stock: {feature: round(rd.uniform(100, 500), 2) for feature in get_the_best_stock_features_that_user_likes()} for stock in get_best_5_stocks()}
+    return {stock: {feature: round(rd.uniform(100, 500), 2) for feature in get_the_best_stock_features_that_user_likes()} for stock in get_best_5_stocks(user=0)}
 
 # Function to update each stock feature by a small step
 def update_stock_features():
@@ -30,13 +33,13 @@ def update_stock_features():
 
 # Function to create stock summary text
 def create_stock_summary():
-    summary_text = ""
-    for stock, features in stocks_features.items():
-        feature_summary = ", ".join([f"{k}: {v:.2f}" for k, v in features.items()])
-        summary_text += f"{stock}: {feature_summary}\n\n"
-    return summary_text
+   summary_text = ""
+   for stock, features in stocks_features.items():
+       feature_summary = ", ".join([f"{k}: {v:.2f}" for k, v in features.items()])
+       summary_text += f"{stock}: {feature_summary}\n\n"
+   return summary_text
 
-last_stock_clicked = AAPL
+last_stock_clicked = "AAPL"
 # Define colors and font styles
 bg_color = '#f5f5f5'
 text_color = '#333333'
@@ -52,7 +55,7 @@ window_width, window_height = 1524, 968
 layout = [
     [sg.Text("Stock Advisor", size=(int(window_width/12), 1), font=font_large, text_color=text_color)],
     [sg.HorizontalSeparator()],
-    [sg.Button(stock, size=(15, 2), font=font_medium, button_color=button_color, border_width=2) for stock in get_best_5_stocks()],
+    [sg.Button(stock, size=(15, 2), font=font_medium, button_color=button_color, border_width=2) for stock in get_best_5_stocks(user=0)],
     [sg.Text("Stock Information", font=font_medium)],
     [sg.Text("", font=font_medium, key='-FEATURES-', size=(200, 10))],
     [sg.Text("", key='-ADVISOR-', size=(200, 10), font=font_small)],

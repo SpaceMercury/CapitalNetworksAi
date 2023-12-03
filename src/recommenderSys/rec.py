@@ -63,10 +63,9 @@ def make_train(ratings, pct_test=0.2):
 def recommendationOutput(product_train, alpha, userId):
     model = AlternatingLeastSquares(factors=100, regularization=0.01, alpha=2.0)
     model.fit(product_train)
-    ids, scores = model.recommend(userId, product_train, N=10, filter_already_liked_items=False)
+    ids, scores = model.recommend(userId, product_train, N=5, filter_already_liked_items=False)
     #user_vecs, stock_vecs = implicit.alternating_least_squares((product_train * alpha).astype('double'), factors= 20, regularization = 0.1, iterations = 50)
 
-    #user_vecs[0,:].dot(stock_vecs).toarray()[0,:5]
     return ids, scores
 
 def recommenderSys(pathTrans, userId):
