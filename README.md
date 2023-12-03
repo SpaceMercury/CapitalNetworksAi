@@ -32,10 +32,4 @@ Personalized stock reccomendation system based on user's risk profile, preferenc
 
 The LLM chatbot uses the GPT-4-turbo model to generate responses. The LLM model is a language model that uses a prompt to generate a response. The prompt is a concatenation of the user's previous messages and the chatbot's previous responses. The LLM model is trained on the Reddit dataset. The LLM model is prompted with the user's previous messages and the chatbot's previous responses. The model is then used to generate a response to the user's message. We used a number of techniques from different sources to improve the performance of the LLM model through prompt engineering.
 
-###
-
-## Technologies Used
-
-## Setup and Installation
-
 ---
