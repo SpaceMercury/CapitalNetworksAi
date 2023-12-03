@@ -9,13 +9,15 @@ import glob
 
 def dataClean(pathUsers, pathStocks):
     # Get a list of all user transaction JSON files
-    transaction_files = glob.glob(f'{path}/*.json')
+    transaction_files = glob.glob(f'{pathUsers}/*.json')
 
     # Load and concatenate all user transactions data
     df_transactions = pd.concat([pd.read_json(file) for file in transaction_files], ignore_index=True)
 
     # Load stock information data
-    df_stocks = pd.read_json('path_to_stocks.json')
+    df_stocks = pd.read_json(f'{pathStocks}/*.json')
+
+    stock_lookup = df_stocks[['', 'item_name']]
 
     # Preprocess data
     user_encoder = LabelEncoder()
